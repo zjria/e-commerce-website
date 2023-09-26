@@ -1,0 +1,517 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Custom css Start */
+
+
+/* header section start */
+
+.header-section {
+    background-color: rgb(44 77 90);
+    padding: 10px 0px;
+    font-size: 12px;
+}
+
+.header-left-section ul, .header-right-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-left-section img, .header-right-section img {
+    width: 15px;
+}
+
+.header-left-section ul li {
+    margin-right: 10px;
+    list-style: none;
+}
+
+.header-right-section ul li {
+    margin-left: 10px;
+    list-style: none;
+}
+
+.header-left-section ul li a, .header-right-section ul li a {
+    text-decoration: none;
+}
+
+.header-right-section {
+    float: right;
+}
+
+/* Navbar Section start */
+
+.navbar-section {
+    background-color: rgb(250 250 250);
+}
+
+.navbar-section .navbar-brand img {
+    width: 20px;
+}
+
+.search-field button img {
+    width: 20px;
+}
+
+.navbar-search-button {
+    border: 0;
+    background: none;
+}
+
+.input-group.search-field input {
+    display: none;
+}
+
+.navbar-search-button:hover .input-group.search-field input {
+    display: block;
+}
+
+.navbar-section ul li {
+    padding: 0 25px;
+}
+
+form ul {
+    padding: 0;
+    margin: 0;
+}
+
+form ul li {
+    list-style: none;
+    padding: 0 17px;
+}
+
+form ul li a img {
+    width: 20px;
+}
+
+/* main section start */
+
+/* Banner Section Start */
+article, .footer-section {
+    margin: 100px 0px;
+}
+
+.carousel-item img {
+    position: relative;
+}
+
+.carousel-item .banner-search-text-field {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 50%;
+}
+
+.input-submit-field input, .sebscribe-input input {
+    width: 70%;
+    padding: 8px;
+    font-size: 17px;
+    position: relative;
+    border-top-color: white;
+    border-right-style: none;
+    border-bottom-color: white;
+    border-left-color: white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.input-submit-field input::placeholder, .sebscribe-input input::placeholder {
+    color: white;
+    opacity: 0.7;
+
+}
+
+.input-submit-field button, .sebscribe-input button {
+    width: 10%;
+    padding: 8px;
+    font-size: 17px;
+    position: absolute;
+    margin-left: -5px;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-style: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.input-submit-field button:focus-visible, .sebscribe-input button:focus-visible {
+    background-color: rgba(231, 231, 231, 0.785);
+    color: black;
+}
+
+.banner-search-text-field h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+.banner-search-text-field h1 span {
+    color: rgb(246 190 51);
+}
+
+.banner-search-text-field p {
+    font-size: 24px;
+    color: white;
+}
+
+.banner-search-text-field .banner-buttons {
+    margin-top: 200px;
+}
+
+.banner-buttons .btn {
+    color: white;
+    background-color: var(--bs-btn-hover-bg);
+    border-color: #f8eeee;
+    padding: 12px 20px;
+}
+
+.banner-buttons .btn:hover {
+    color: white;
+    background-color: rgb(102 153 58);
+    border-color: #f8eeee;
+
+}
+
+.product-service {
+    background-color: rgb(137 113 70);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 0px;
+}
+
+.product-service .service {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-service img {
+    width: 60px;
+    filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(165deg) brightness(116%) contrast(100%);
+    ;
+}
+
+.vertical-line {
+    border: 3px solid #ffffff73;
+    height: 90%;
+    border-radius: 2px;
+}
+
+/* new-products section start */
+
+.new-products hr, .popular-products hr, .testimonial-header hr {
+    width: 200px;
+    border: 2px solid rgb(253, 131, 17);
+}
+
+.buttons-room {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.buttons-room .btn {
+    border: 3px solid rgb(221 221 221);
+    border-radius: 32px;
+    padding: 12px 30px;
+    margin: 5px 12px;
+    font-size: 20px;
+    color: rgb(101 101 101);
+}
+
+.buttons-room .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+article.living-room-card img, article.popular-products-card img {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+article.living-room-card .card, article.popular-products-card .card {
+    background-color: rgb(245 245 245);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+article.living-room-card .card-body, article.popular-products-card .card-body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+article.living-room-card .card-body, article.living-room-card .card-footer, article.popular-products-card .card-body, article.popular-products-card .card-footer {
+    background-color: rgb(255 255 255);
+    width: 100%;
+}
+
+article.living-room-card .card .card-body ul, article.popular-products-card .card .card-body ul {
+    padding: 0;
+    justify-content: center;
+}
+
+article.living-room-card .card .card-body ul li, article.popular-products-card .card .card-body ul li {
+    list-style: none;
+    margin: 0px 3px;
+}
+
+article.living-room-card .card .card-body ul li i, article.popular-products-card .card .card-body ul li i {
+    color: rgb(254 209 2);
+}
+
+article.living-room-card .love-icon, article.popular-products-card .love-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px 13px;
+    border-radius: 30px;
+}
+
+article.living-room-card .love-icon i, article.popular-products-card .love-icon i {
+    font-size: 21px;
+    color: #0000008c;
+}
+
+.living-room-card .btn, article.popular-products-card .btn {
+    background-color: rgb(40 110 108);
+    color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Who We Are Section Start */
+.who-we-are {
+    background-color: rgb(246 246 246);
+    padding: 50px 0px;
+}
+
+article.who-we-are img {
+    border-radius: 10px;
+}
+
+.we-are-information>h5 {
+    color: red;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.we-are-information h1 {
+    font-weight: 700;
+    margin: 18px 0px;
+}
+
+article.who-we-are p {
+    color: #878181;
+}
+
+.we-are-part img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.stor-information h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Design your dream home with the perfect furniture Section Start */
+
+.dream-home {
+    position: relative;
+    text-align: center;
+}
+
+.dream-home-information {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    width: 50%;
+}
+
+.dream-home-information h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+article.dream-home img {
+    width: 100%;
+    height: 400px;
+}
+
+.dream-home-information .btn {
+    border: 1px solid;
+    padding: 12px 40px;
+}
+
+.dream-home-information p {
+    color: #6d6d6d;
+    margin-bottom: 50px;
+}
+
+/* Testimonial Section Start */
+article.testimonials-section .carousel-inner {
+    padding: 10px;
+}
+
+.carousel-section .quotes {
+    background: rgb(20 159 158);
+    border-radius: 0px 0px 100px 0px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.quotes img {
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    top: 30%;
+    left: 25%;
+    position: absolute;
+}
+
+.carousel-body p {
+    color: rgb(144 144 144);
+    text-align: center;
+}
+
+.carousel-body img {
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    border: 2px solid #0f7460;
+}
+
+.card-body.carousel-body {
+    text-align: center;
+}
+
+.card-body.carousel-body h5 {
+    color: rgb(71 180 179);
+}
+
+.col.carousel-section .card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+}
+
+button.carousel-control-prev {
+    width: 40px;
+    height: 38px;
+    background: hsl(180, 1%, 38%);
+    border-radius: 50%;
+    left: -20px;
+    top: 50%;
+}
+
+button.carousel-control-prev:hover {
+    background: hsl(179.57deg 77.65% 35.1%);
+
+}
+
+button.carousel-control-next {
+    width: 40px;
+    height: 38px;
+    background: hsl(180, 1%, 38%);
+    border-radius: 50%;
+    right: -20px;
+    top: 50%;
+}
+
+button.carousel-control-next:hover {
+    background: hsl(179.57deg 77.65% 35.1%);
+}
+
+/* .Footer Section Start */
+.footer-section {
+    background-color: hsl(214.29deg 22.22% 24.71%);
+    color: rgb(220 222 225);
+    padding: 50px 0px;
+}
+
+.contract .logo-img {
+    width: 40px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(75deg) brightness(114%) contrast(101%);
+}
+
+.contract .location, .contract .email, .contract .phone {
+    margin: 20px 0px;
+}
+
+.contract .socail-link ul {
+    display: flex;
+    padding: 0;
+}
+
+.contract .socail-link ul li {
+    list-style: none;
+    margin: 0px 15px 0px 0px;
+    background: rgb(220 222 225);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+.contract .socail-link ul li a i {
+    color: hsl(214.29deg 22.22% 24.71%);
+}
+
+.contract span {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.contract i {
+    font-size: 17px;
+}
+
+.link-section ul {
+    padding: 0;
+}
+
+.link-section ul li {
+    list-style: none;
+    margin: 13px 0px;
+}
+
+.link-section ul li a {
+    text-decoration: none;
+    color: rgb(220 222 225);
+}
+
+.sebscribe-input button {
+    background: rgb(246 190 51);
+    width: 5%;
+}
+
+.sebscribe-input button:focus {
+    background: rgb(246 190 51);
+}
+
+.Subscribe-section p {
+    margin: 48px 0px;
+}

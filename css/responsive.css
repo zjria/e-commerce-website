@@ -1,0 +1,128 @@
+@media (max-width: 576px) {
+    .header-left-section {
+        justify-content: center;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .header-right-section {
+        justify-content: center;
+        float: none;
+        display: flex;
+    }
+
+    .navbar-section ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dream-home-information {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0px 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .socail-link {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .Subscribe-section {
+        margin-top: 50px;
+    }
+
+    .sebscribe-input button {
+        width: 15%;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-section ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-item .banner-search-text-field {
+        top: 30px;
+    }
+
+    .banner-search-text-field p {
+        font-size: 16px;
+    }
+
+    .banner-search-text-field h1 {
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+
+    .banner-search-text-field .banner-buttons {
+        margin-top: 40px;
+    }
+
+    article.who-we-are img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .we-are-information {
+        margin-top: 50px;
+    }
+
+    .stor-information {
+        margin-left: 20px;
+    }
+
+    .dream-home-information {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: start;
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .socail-link {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .Subscribe-section {
+        margin-top: 50px;
+    }
+
+    .sebscribe-input button {
+        width: 10%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .dream-home-information {
+        padding: 0px 20px;
+    }
+}
+
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}

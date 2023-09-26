@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col--sm-12 col-md-6 col-lg-6">
+                    <div class="header-left-section">
+                        <ul class="d-flex">
+                            <li><a href="#" class="d-flex">
+                                    <img class="img-fluid" src="./images/header/envelope-icon.svg" alt="">
+                                    <div class="email ms-2 text-white">mdriazul1984@gmail.com</div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="d-flex">
+                                    <img class="img-fluid" src="./images/header/phone-icon.svg" alt="">
+                                    <div class="phone ms-2 text-white">02-45762-9875</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="header-right-section">
+                        <ul class="d-flex">
+                            <li><a href="#" class="d-flex">
+                                    <img class="img-fluid" src="./images/header/envelope-icon.svg" alt="">
+                                    <div class="account ms-2 text-white">My Account</div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="d-flex">
+                                    <img class="img-fluid" src="./images/header/phone-icon.svg" alt="">
+                                    <div class="login ms-2 text-white">Login</div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="d-flex">
+                                    <img class="img-fluid" src="./images/header/phone-icon.svg" alt="">
+                                    <div class="wishlist ms-2 text-white">wishlist</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-section">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img class="img-fluid" src="./images/navbar/bag.png" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catagory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="input-group search-field">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="input-group-text img-fluid navbar-search-button" id="basic-addon2">
+                                <img src="./images/navbar/search.png" alt=""></button>
+                        </div>
+                    </li>
+                </ul>
+                <form>
+                    <ul class="d-flex">
+                        <li class="">
+                            <a class="nav-link" href="#"><img class="img-fluid" src="./images/navbar/shopping-cart.png"
+                                    alt=""></a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="#"><img class="img-fluid" src="./images/navbar/user.png"
+                                    alt=""></a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section start -->
+    <main class="mb-5">
+        <!-- Banner Section Start -->
+        <section class="banner-section">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/banner/1.png" class="img-fluid m-auto d-flex" alt="...">
+                        <div class="banner-search-text-field d-none d-sm-block container-fluid">
+                            <div class="input-submit-field">
+                                <input type="text" placeholder="search for products">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <h1 class="text-white">Furnish Your Dream <br> <span> Our Furniture !</span></h1>
+                            <p>Explore different cattalog for our showroom a client happyness for our furniture this
+                            </p>
+                            <div class="banner-buttons">
+                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/banner/2.png" class="img-fluid m-auto d-flex" alt="...">
+                        <div class="banner-search-text-field d-none d-sm-block container-fluid">
+                            <div class="input-submit-field">
+                                <input type="text" placeholder="search for products">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <h1 class="text-white">Furnish Your Dream <br> <span> Our Furniture !</span></h1>
+                            <p>Explore different cattalog for our showroom a client happyness for our furniture this
+                            </p>
+                            <div class="banner-buttons">
+                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner/3.png" class="img-fluid m-auto d-flex" alt="...">
+                        <div class="banner-search-text-field d-none d-sm-block container-fluid">
+                            <div class="input-submit-field">
+                                <input type="text" placeholder="search for products">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <h1 class="text-white">Furnish Your Dream <br> <span> Our Furniture !</span></h1>
+                            <p>Explore different cattalog for our showroom a client happyness for our furniture this
+                            </p>
+                            <div class="banner-buttons">
+                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-service">
+                    <div class="row">
+                        <div class="col-6 col-md-3 service">
+                            <div class="free-delivery">
+                                <img class="img-fluid" src="./images/banner/truck.png" alt="">
+                                <h5>Free Delivery</h5>
+                                <p>On all orders over $39.00</p>
+                            </div>
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-6 col-md-3 service">
+                            <div class="free-delivery">
+                                <img class="img-fluid" src="./images/banner/return.png" alt="">
+                                <h5>90 Days Return</h5>
+                                <p>Moneyback gurantee</p>
+                            </div>
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-6 col-md-3 service">
+                            <div class="free-delivery">
+                                <img class="img-fluid" src="./images/banner/suport.png" alt="">
+                                <h5>Suport 24/7</h5>
+                                <p>Support 24hours</p>
+                            </div>
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="col-6 col-md-3 service">
+                            <div class="free-delivery">
+                                <img class="img-fluid" src="./images/banner/medal.png" alt="">
+                                <h5>100% Free Warranty</h5>
+                                <p>100% protected by paypal</p>
+                            </div>
+                            <!-- <div class="vertical-line"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Products Section Start -->
+        <article class="new-products">
+            <div class="container-fluid">
+                <h1 class="text-uppercase justify-content-center text-center fw-bold">New Products</h1>
+                <hr class="justify-content-center text-center m-auto">
+                <div class="buttons-room">
+                    <button type="button" class="btn">Living Room</button>
+                    <button type="button" class="btn">Kitchen Room</button>
+                    <button type="button" class="btn ">Drawing Room</button>
+                    <button type="button" class="btn">Dinning Room</button>
+                    <button type="button" class="btn">Bed Room</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Living Room Card Section Start -->
+        <article class="living-room-card">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/2.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/3.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/4.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/5.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/6.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/7.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/card/8.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-lg">Veiw All Products</button>
+
+            </div>
+        </article>
+
+        <!-- Who We Are Section Start -->
+        <article class="who-we-are">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="./images/who-we-are/18.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="we-are-information">
+                            <h5>Who We Are</h5>
+                            <h1>A Creation that suits <br> your personality.</h1>
+                            <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                nisi deleniti
+                                incidunt. Voluptate nulla illo aliquid natus, eligendi illum vitae!</p>
+                            <div class="we-are-part d-flex mb-2">
+                                <img class="img-fluid" src="./images/who-we-are/stor.png" alt="">
+                                <div class="stor-information">
+                                    <h5>Trusted furniture store</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eligendi.</p>
+                                </div>
+                            </div>
+                            <div class="we-are-part d-flex mb-2">
+                                <img class="img-fluid" src="./images/who-we-are/professional.png" alt="">
+                                <div class="stor-information">
+                                    <h5>Professional Service</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eligendi.</p>
+                                </div>
+                            </div>
+                            <div class="we-are-part d-flex mb-2">
+                                <img class="img-fluid" src="./images/who-we-are/safe.png" alt="">
+                                <div class="stor-information">
+                                    <h5>100% Safe transaction</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eligendi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Popular products Card Section Start -->
+        <article class="popular-products">
+            <div class="container-fluid">
+                <h1 class="text-uppercase justify-content-center text-center fw-bold">Popular Products</h1>
+                <hr class="justify-content-center text-center m-auto">
+            </div>
+        </article>
+
+        <article class="popular-products-card">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/2.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/3.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/4.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/5.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/6.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/7.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="love-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <img src="./images/popular-products/8.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dericka Accent Chair</h5>
+                                <h6>$220</h6>
+                                <ul class="d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary text-uppercase fw-bold">Add to card</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-lg">Veiw All Products</button>
+
+            </div>
+        </article>
+
+        <!-- Design your dream home with the perfect furniture Section Start -->
+        <article class="dream-home">
+            <img class="img-fluid" src="./images/dream-home/dream-home.png" alt="Snow">
+            <div class="container">
+                <div class="dream-home-information">
+                    <h1>Design your dream home with the perfect furniture</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde sint repellendus id
+                        assumenda ipsam, atque labore accusamus aspernatur! Nesciunt, accusantium.</p>
+                    <button type="button" class="btn rounded-pill fw-bold">Explore All Product</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Testimonials Section Start -->
+        <article class="testimonials-section">
+            <div class="container">
+                <div class="testimonial-header mb-4">
+                    <h1 class="text-uppercase justify-content-center text-center fw-bold">Testimonials</h1>
+                    <hr class="justify-content-center text-center m-auto">
+                </div>
+                <!-- carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <!-- <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/3.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/4.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/5.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/6.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/7.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/8.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/9.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/10.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col carousel-section">
+                                    <div class="card h-100">
+                                        <div class="quotes">
+                                            <img class="img-fluid" src="./images/testimonial/double-quotes.png" alt="">
+                                        </div>
+                                        <div class="card-body carousel-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque odit quia
+                                                fugiat eveniet repellat vero.</p>
+                                            <img src="./images/testimonial/4.png" class="card-img-top img-fluid cline"
+                                                alt="...">
+                                            <h5 class="card-title">Alex Donal</h5>
+                                            <p class="card-text text-uppercase">CEO/Director</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="contract">
+                            <img class="img-fluid logo-img" src="./images/navbar/bag.png" alt="">
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>11 The Avenue, United of Kingdom</span>
+                            </div>
+                            <div class="email">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>themesky@gmail.com</span>
+                            </div>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>025-1234-5678</span>
+                            </div>
+                            <div class="socail-link">
+                                <ul>
+                                    <li style="width: 30px; height: 30px;"><a href="#"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li style="width: 30px; height: 30px;"><a href="#"><i
+                                                class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li style="width: 30px; height: 30px;"><a href="#"><i
+                                                class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="link-section">
+                            <ul>
+                                <li><a href="#" class="fw-bolder">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Community Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="Subscribe-section">
+                            <h4>Subscribe Now</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                            <div class="sebscribe-input">
+                                <input type="text" placeholder="Enter mail address">
+                                <button type="submit">
+                                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <!-- Bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
