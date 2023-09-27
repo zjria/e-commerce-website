@@ -46,6 +46,26 @@
         width: 15%;
     }
 
+    .vertical-line {
+        display: none;
+    }
+
+    .banner-section .product-service {
+        bottom: -480px;
+    }
+
+    article.new-products {
+        margin-top: 550px;
+    }
+
+    button.carousel-control-prev {
+        left: 0px;
+    }
+
+    button.carousel-control-next {
+        right: 0;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -112,12 +132,71 @@
     .sebscribe-input button {
         width: 10%;
     }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .banner-section .product-service {
+        bottom: -200px;
+    }
+
+    article.new-products {
+        margin-top: 300px;
+    }
+
+    .product-service h5 {
+        font-size: 16px;
+    }
+
+    .product-service p {
+        font-size: 12px;
+    }
+
+    button.carousel-control-prev {
+        left: -35px;
+    }
+
+    button.carousel-control-next {
+        right: -35px;
+    }
+
 }
 
 
 @media (min-width: 769px) and (max-width: 992px) {
     .dream-home-information {
         padding: 0px 20px;
+    }
+
+    .carousel-item .banner-search-text-field {
+        width: 60%;
+    }
+
+    .banner-search-text-field h1 {
+        font-size: 40px;
+        font-weight: 400;
+        margin: 15px 0px;
+    }
+
+    .banner-search-text-field p {
+        font-size: 16px;
+    }
+
+    .banner-search-text-field .banner-buttons {
+        margin-top: 20px;
+    }
+
+    .product-service img {
+        width: 40px;
+    }
+
+    .product-service h5 {
+        font-size: 16px;
+    }
+
+    .product-service p {
+        font-size: 12px;
     }
 }
 

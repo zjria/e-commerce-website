@@ -54,21 +54,8 @@ html {
     width: 20px;
 }
 
-.search-field button img {
-    width: 20px;
-}
-
-.navbar-search-button {
-    border: 0;
-    background: none;
-}
-
-.input-group.search-field input {
-    display: none;
-}
-
-.navbar-search-button:hover .input-group.search-field input {
-    display: block;
+.navbar-section ul {
+    align-items: center;
 }
 
 .navbar-section ul li {
@@ -89,6 +76,31 @@ form ul li a img {
     width: 20px;
 }
 
+.navbar-search-input-button input {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.navbar-search-input-button button {
+    margin-left: -5px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.navbar-search-input-button {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.navbar-search-input-button button:focus {
+    color: #ffffff;
+    background-color: gold;
+}
+
+
+
 /* main section start */
 
 /* Banner Section Start */
@@ -107,42 +119,39 @@ article, .footer-section {
     width: 50%;
 }
 
-.input-submit-field input, .sebscribe-input input {
+.banner-input-submit-field input, .banner-input-submit-field button {
+    border: 1px solid white;
+}
+
+.banner-input-submit-field input, .sebscribe-input input {
     width: 70%;
     padding: 8px;
     font-size: 17px;
     position: relative;
-    border-top-color: white;
-    border-right-style: none;
-    border-bottom-color: white;
-    border-left-color: white;
     outline: none;
     background-color: transparent;
     color: white;
+    border-right: none;
 }
 
-.input-submit-field input::placeholder, .sebscribe-input input::placeholder {
+.banner-input-submit-field input::placeholder, .sebscribe-input input::placeholder {
     color: white;
     opacity: 0.7;
 
 }
 
-.input-submit-field button, .sebscribe-input button {
-    width: 10%;
-    padding: 8px;
+.banner-input-submit-field button, .sebscribe-input button {
+    padding: 8px 30px;
     font-size: 17px;
     position: absolute;
     margin-left: -5px;
-    border-top-color: white;
-    border-right-color: white;
-    border-bottom-color: white;
     border-left-style: none;
     outline: none;
     background-color: transparent;
     color: white;
 }
 
-.input-submit-field button:focus-visible, .sebscribe-input button:focus-visible {
+.banner-input-submit-field button:focus-visible, .sebscribe-input button:focus-visible {
     background-color: rgba(231, 231, 231, 0.785);
     color: black;
 }
@@ -170,7 +179,8 @@ article, .footer-section {
     color: white;
     background-color: var(--bs-btn-hover-bg);
     border-color: #f8eeee;
-    padding: 12px 20px;
+    padding: 8px 40px;
+    font-weight: 600;
 }
 
 .banner-buttons .btn:hover {
@@ -180,12 +190,25 @@ article, .footer-section {
 
 }
 
-.product-service {
+.banner-section .product-service {
     background-color: rgb(137 113 70);
     color: #ffffff;
     text-align: center;
     border-radius: 40px;
     padding: 10px 0px;
+    max-width: 945px;
+    /* height: 80px; */
+    position: absolute;
+    margin: 0 auto;
+    bottom: -75px;
+    left: 50%;
+    /* z-index: 99; */
+    width: 98%;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators {
+    bottom: 90px;
 }
 
 .product-service .service {
@@ -204,6 +227,24 @@ article, .footer-section {
     height: 90%;
     border-radius: 2px;
 }
+
+.banner-input-submit-field button:focus {
+    background-color: gold;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 6px 8px;
+    border: 1px solid white;
+    width: 0;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: white !important;
+}
+
 
 /* new-products section start */
 
@@ -324,7 +365,6 @@ article.who-we-are p {
     margin-right: 10px;
 }
 
-
 .stor-information h5 {
     font-size: 25px;
     font-weight: 700;
@@ -359,6 +399,11 @@ article.dream-home img {
 .dream-home-information .btn {
     border: 1px solid;
     padding: 12px 40px;
+}
+
+.dream-home-information .btn:hover {
+    background-color: gold;
+    color: white;
 }
 
 .dream-home-information p {
@@ -414,7 +459,7 @@ article.testimonials-section .carousel-inner {
 }
 
 .col.carousel-section .card {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 8px;
     border: none;
 }
 
@@ -514,4 +559,8 @@ button.carousel-control-next:hover {
 
 .Subscribe-section p {
     margin: 48px 0px;
+}
+
+.sebscribe-input input, .sebscribe-input button {
+    border: 1px solid white;
 }

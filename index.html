@@ -86,12 +86,45 @@
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <div class="input-group search-field">
-                            <input type="text" class="form-control" placeholder="Recipient's username"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <button class="input-group-text img-fluid navbar-search-button" id="basic-addon2">
-                                <img src="./images/navbar/search.png" alt=""></button>
+                        <div class="navbar-search-input-button">
+                            <input type="text" placeholder="search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
+
+
+                        <!-- <div class="navbar-search-input">
+                            <input type="text" placeholder="search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div> -->
+                        <!-- REPEATS THE ABOVE TWICE -->
+                        <!-- <div class="box" tabindex="2">
+                            <p>Click anywhere in this box.</p>
+                            <div class="inner_box">
+                                <p>Click this <a href="http://google.com" target="_blank">link</a>.</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="box" tabindex="3">
+                            <p>Click anywhere in this box.</p>
+                            <div class="inner_box">
+                                <p>Click this <a href="http://google.com" target="_blank">link</a>.</p>
+                            </div>
+                        </div> -->
+                        <!-- NO HIDE BELOW -->
+                        <!-- <div class="nohide_box" tabindex="3">
+                            <p><B>This box doesn't show/hide anything.</p>
+                            <div class="nohide_inner_box">
+                                <p>Click this <a href="http://google.com" target="_blank">link</a> which works.</p>
+                            </div>
+                        </div> -->
+
+
+
+
+
                     </li>
                 </ul>
                 <form>
@@ -126,8 +159,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="./images/banner/1.png" class="img-fluid m-auto d-flex" alt="...">
-                        <div class="banner-search-text-field d-none d-sm-block container-fluid">
-                            <div class="input-submit-field">
+                        <div class="banner-search-text-field d-none d-sm-none d-md-block container-fluid">
+                            <div class="banner-input-submit-field">
                                 <input type="text" placeholder="search for products">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
@@ -135,15 +168,15 @@
                             <p>Explore different cattalog for our showroom a client happyness for our furniture this
                             </p>
                             <div class="banner-buttons">
-                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
-                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                                <button type="button" class="btn rounded-pill btn-lg">BUY NOW</button>
+                                <button type="button" class="btn rounded-pill btn-lg">EXPLORE</button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="./images/banner/2.png" class="img-fluid m-auto d-flex" alt="...">
-                        <div class="banner-search-text-field d-none d-sm-block container-fluid">
-                            <div class="input-submit-field">
+                        <div class="banner-search-text-field d-none d-sm-none d-md-block container-fluid">
+                            <div class="banner-input-submit-field">
                                 <input type="text" placeholder="search for products">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
@@ -151,15 +184,15 @@
                             <p>Explore different cattalog for our showroom a client happyness for our furniture this
                             </p>
                             <div class="banner-buttons">
-                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
-                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                                <button type="button" class="btn rounded-pill btn-lg">BUY NOW</button>
+                                <button type="button" class="btn rounded-pill btn-lg">EXPLORE</button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./images/banner/3.png" class="img-fluid m-auto d-flex" alt="...">
-                        <div class="banner-search-text-field d-none d-sm-block container-fluid">
-                            <div class="input-submit-field">
+                        <div class="banner-search-text-field d-none d-sm-none d-md-block container-fluid">
+                            <div class="banner-input-submit-field">
                                 <input type="text" placeholder="search for products">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
@@ -167,52 +200,54 @@
                             <p>Explore different cattalog for our showroom a client happyness for our furniture this
                             </p>
                             <div class="banner-buttons">
-                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
-                                <button type="button" class="btn rounded-pill btn-lg">Large button</button>
+                                <button type="button" class="btn rounded-pill btn-lg">BUY NOW</button>
+                                <button type="button" class="btn rounded-pill btn-lg">EXPLORE</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="product-service">
-                    <div class="row">
-                        <div class="col-6 col-md-3 service">
-                            <div class="free-delivery">
-                                <img class="img-fluid" src="./images/banner/truck.png" alt="">
-                                <h5>Free Delivery</h5>
-                                <p>On all orders over $39.00</p>
+                <div class="container">
+                    <div class="product-service">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-3 service">
+                                <div class="free-delivery">
+                                    <img class="img-fluid" src="./images/banner/truck.png" alt="">
+                                    <h5>Free Delivery</h5>
+                                    <p>On all orders over $39.00</p>
+                                </div>
+                                <div class="vertical-line"></div>
                             </div>
-                            <div class="vertical-line"></div>
-                        </div>
-                        <div class="col-6 col-md-3 service">
-                            <div class="free-delivery">
-                                <img class="img-fluid" src="./images/banner/return.png" alt="">
-                                <h5>90 Days Return</h5>
-                                <p>Moneyback gurantee</p>
+                            <div class="col-12 col-sm-6 col-md-3 service">
+                                <div class="free-delivery">
+                                    <img class="img-fluid" src="./images/banner/return.png" alt="">
+                                    <h5>90 Days Return</h5>
+                                    <p>Moneyback gurantee</p>
+                                </div>
+                                <div class="vertical-line"></div>
                             </div>
-                            <div class="vertical-line"></div>
-                        </div>
-                        <div class="col-6 col-md-3 service">
-                            <div class="free-delivery">
-                                <img class="img-fluid" src="./images/banner/suport.png" alt="">
-                                <h5>Suport 24/7</h5>
-                                <p>Support 24hours</p>
+                            <div class="col-12 col-sm-6 col-md-3 service">
+                                <div class="free-delivery">
+                                    <img class="img-fluid" src="./images/banner/suport.png" alt="">
+                                    <h5>Suport 24/7</h5>
+                                    <p>Support 24hours</p>
+                                </div>
+                                <div class="vertical-line"></div>
                             </div>
-                            <div class="vertical-line"></div>
-                        </div>
-                        <div class="col-6 col-md-3 service">
-                            <div class="free-delivery">
-                                <img class="img-fluid" src="./images/banner/medal.png" alt="">
-                                <h5>100% Free Warranty</h5>
-                                <p>100% protected by paypal</p>
+                            <div class="col-12 col-sm-6 col-md-3 service">
+                                <div class="free-delivery">
+                                    <img class="img-fluid" src="./images/banner/medal.png" alt="">
+                                    <h5>100% Free Warranty</h5>
+                                    <p>100% protected by paypal</p>
+                                </div>
+                                <!-- <div class="vertical-line"></div> -->
                             </div>
-                            <!-- <div class="vertical-line"></div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- New Products Section Start -->
         <article class="new-products">
@@ -673,14 +708,6 @@
                 </div>
                 <!-- carousel -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <!-- <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div> -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row row-cols-1 row-cols-md-3 g-4">
