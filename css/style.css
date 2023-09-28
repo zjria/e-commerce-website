@@ -110,13 +110,15 @@ article, .footer-section {
 
 .carousel-item img {
     position: relative;
+    width: 100%;
 }
 
 .carousel-item .banner-search-text-field {
     position: absolute;
-    left: 0;
-    top: 100px;
+    left: 30%;
+    top: 50%;
     width: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .banner-input-submit-field input, .banner-input-submit-field button {
