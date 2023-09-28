@@ -76,29 +76,29 @@ form ul li a img {
     width: 20px;
 }
 
-.navbar-search-input-button input {
-    border: 0;
+.navbarSearchButton {
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+}
+
+#input-container {
+    display: none;
+}
+
+button#focus-button {
+    border: none;
     background-color: transparent;
-    outline: none;
 }
 
-.navbar-search-input-button button {
-    margin-left: -5px;
-    width: 50px;
+#input-field {
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0);
-    outline: none;
 }
-
-.navbar-search-input-button {
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.navbar-search-input-button button:focus {
-    color: #ffffff;
-    background-color: gold;
-}
-
 
 
 /* main section start */
