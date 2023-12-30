@@ -174,7 +174,7 @@ article, .footer-section {
 }
 
 .banner-search-text-field .banner-buttons {
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .banner-buttons .btn {
@@ -247,6 +247,18 @@ article, .footer-section {
     background-color: white !important;
 }
 
+.img-layout {
+    position: relative;
+}
+
+.layout {
+    background-color: rgba(0, 0, 0, 0.277);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* new-products section start */
 
@@ -322,6 +334,7 @@ article.living-room-card .love-icon, article.popular-products-card .love-icon {
     background: white;
     padding: 10px 13px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 article.living-room-card .love-icon i, article.popular-products-card .love-icon i {
@@ -424,18 +437,6 @@ article.testimonials-section .carousel-inner {
     position: relative;
     width: 80px;
     height: 80px;
-}
-
-.quotes img {
-    width: 30px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
-    top: 30%;
-    left: 25%;
-    position: absolute;
 }
 
 .carousel-body p {
@@ -565,4 +566,9 @@ button.carousel-control-next:hover {
 
 .sebscribe-input input, .sebscribe-input button {
     border: 1px solid white;
+}
+
+.location a, .email a, .phone a {
+    text-decoration: none;
+    color: white;
 }
